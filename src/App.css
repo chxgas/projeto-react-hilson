@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #f2e9e4;
+  --secondary-color: #e0e1dd;
+  --dark-color: #4a4e69;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  background: var(--secondary-color);
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--dark-color);
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: var(--dark-color);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox-wrap input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--dark-color);
+  border-radius: 4px;
+  cursor: pointer;
+  background: white;
+  margin: 0;
+  position: relative;
+}
+
+.checkbox-wrap input[type="checkbox"]:checked {
+  background: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.checkbox-wrap input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: var(--primary-color);
+  font-size: 12px;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-text {
+  cursor: default;
+}
+
+.task-item.done .task-text {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--dark-color);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  background: transparent;
+  border: none;
+  color: var(--dark-color);
+  font-size: 18px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  color: black;
+  opacity: 0.8;
+}
