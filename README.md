@@ -42,13 +42,13 @@ Para utilizar e realizar testes com o seguinte projeto, utilize os comandos no t
 # Clonar o repositório do projeto
 git clone https://github.com/chxgas/projeto-react-hilson
 
-#Acesse a pasta do projeto
+# Acesse a pasta do projeto
 cd projeto-react-hilson
 
-#Instale as dependências
+# Instale as dependências
 npm install
 
-#Inicie o projeto
+# Inicie o projeto
 npm run dev
 ```
 
