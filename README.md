@@ -1,16 +1,78 @@
-# React + Vite
+# **Projeto CRUD: Agenda de Tarefas**
+Realização do projeto por meio do framework front-end React-Js, sobre o cadastro, edição e exclusão de tarefas, salvas no LocalStorage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :pushpin: Tópicos
 
-Currently, two official plugins are available:
+- Descrição
+- Tecnologias Utilizadas
+- Funcionalidades
+- Como Executar
+- Estrutura do Projeto
+- Resultados/Demonstração
+- Autores
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## :pencil2: Descrição
 
-## React Compiler
+> O projeto a seguir foi desenvolvido para a disciplina Front-End Frameworks, responsável pelo professor Hilson Silva. Com o objetivo de realizar um sistema CRUD para *Agendamento de Tarefas*, em prol do uso e práticas das ferramentas aprendidas em aula ao decorrer do curso, com metas de atingir as competências nas tecnologias utilizadas e funcionalidades realizadas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## :computer: Tecnologias Utilizadas
+**Ferramentas utilizadas ao longo do projeto:**
+- HTML
+- CSS
+- Js
+- NodeJs
+- VSCode
+- ReactJs
+- Vite
+  
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,npm,react,vscode,vite)](https://skillicons.dev)
 
-## Expanding the ESLint configuration
+## :sparkles: Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] Criar Tarefas
+- [x] Editar Tarefas
+- [x] Deletar Tarefas 
+- [x] Salvar Dados no LocalStorage
+      
+## :arrow_forward: Execução
+
+Para utilizar e realizar testes com o seguinte projeto, utilize os comandos no terminal de comandos:
+
+```
+# Clonar o repositório do projeto
+git clone https://github.com/chxgas/projeto-react-hilson
+
+#Acesse a pasta do projeto
+cd projeto-react-hilson
+
+#Instale as dependências
+npm install
+
+#Inicie o projeto
+npm run dev
+```
+
+## :file_folder: Estrutura do Projeto
+```
+/projeto-react-hilson
+│── src/
+│   ├── components
+│   │     ├── TaskForm.jsx      
+│   │     ├── TaskItem.jsx      
+│   │     └── TaskList.jsx      
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│── .gitignore
+│── README.md
+│── eslint.config.js
+│── index.html
+│── package-lock.json
+│── package.json
+└── vite.config.js
+```
+## :bar_chart: Resultados/Demonstração
+
+## :moyai: Autores
+- [Lucas Chagas Rezende - 19380343](https://github.com/chxgas)
