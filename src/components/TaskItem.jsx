@@ -6,7 +6,7 @@ export default function TaskItem({ task, deleteTask, toggleTask, editTask }) {
 
   const saveEdit = () => {
     const trimmed = newText.trim();
-    if (!trimmed) return; // evita título vazio
+    if (!trimmed) return;
     editTask(task.id, trimmed);
     setEditing(false);
   };
@@ -14,7 +14,7 @@ export default function TaskItem({ task, deleteTask, toggleTask, editTask }) {
   return (
     <li className={`task-item ${task.done ? "done" : ""}`}>
 
-      {/* Checkbox para marcar/desmarcar */}
+      {}
       <label className="checkbox-wrap">
         <input
           type="checkbox"
@@ -25,7 +25,7 @@ export default function TaskItem({ task, deleteTask, toggleTask, editTask }) {
         <span className="custom-checkbox" />
       </label>
 
-      {/* Conteúdo / texto ou input de edição */}
+      {}
       <div className="task-content">
         {editing ? (
           <input
@@ -38,7 +38,7 @@ export default function TaskItem({ task, deleteTask, toggleTask, editTask }) {
         ) : (
           <span
             className="task-text"
-            onDoubleClick={() => setEditing(true)} // duplo clique para editar
+            onDoubleClick={() => setEditing(true)}
             tabIndex={0}
             onKeyDown={(e) => { if (e.key === "Enter") toggleTask(task.id); }}
             role="button"
@@ -49,7 +49,7 @@ export default function TaskItem({ task, deleteTask, toggleTask, editTask }) {
         )}
       </div>
 
-      {/* Ações: salvar (em edição), editar (quando não editando), excluir */}
+      {}
       <div className="actions">
         {editing ? (
           <>
