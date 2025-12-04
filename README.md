@@ -76,3 +76,4 @@ npm run dev
 
 ## :moyai: Autores
 - [Lucas Chagas Rezende - 19380343](https://github.com/chxgas)
+- [Gustavo Carvalho Reduzino](https://github.com/GustavoRedu)
